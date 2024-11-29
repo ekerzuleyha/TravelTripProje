@@ -1,4 +1,7 @@
-﻿
+﻿@*sınıflar isimli klasörüme ulaş çünkü onu kullanıcaz.*@
+@using TravelTripProje.Models.Siniflar
+@*model isminde bir komut oluşturduk. bu modelim de bir liste tutacak . bu listede benim listelemek istediğim değerleri tutacak.listelemek istediğimiz sınıf hakkımızda. hakkımızda sınıfındaki değerlerimin verilerini listeliyor olacağım.*@
+@model List<Hakkimizda>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_TestLayout.cshtml";
@@ -8,8 +11,13 @@
     <div class="wrap">
         <div class="about">
             <h3>Hakkımızda</h3>
-            <img src="~/web/images/about_banner.jpg" alt="" />
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            @*değişken türü ,ismi ,in ve bu değişken değerlerini nerden alıcak modelden.model de de hakkımızdanın listesi var. *@
+            @foreach (var item in Model)
+            {
+                <img src="@item.FotoUrl" alt="" />
+                <p>@item.Aciklama </p>
+            }
+
 
         </div>
     </div>

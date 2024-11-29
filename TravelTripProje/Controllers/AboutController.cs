@@ -10,9 +10,13 @@ namespace TravelTripProje.Controllers
     public class AboutController : Controller
     {
         // GET: aBOUT
+        //context sınıfından c isimli bir nesne türettik ve bu c sayesinde contextte bağlı olan sınıflarımız içerisinde hakkımızda tabloma ulaşıp bu tabloyu listeledik.
+        Context c = new Context();
+
         public ActionResult Index()
         {
-            return View();
+            var values = c.Hakkimizdas.ToList();
+            return View(values);
         }
     }
 }

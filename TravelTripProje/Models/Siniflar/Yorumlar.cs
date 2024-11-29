@@ -13,9 +13,10 @@ namespace TravelTripProje.Models.Siniflar
         public string KullaniciAdi { get; set; }
         public string Mail { get; set; }
         public string Yorumm { get; set; }
-        //nu yorum hangi bloga yapıldı . bunu tutmak için yazdık. int olarak tuttuk.
+        //bu yorum hangi bloga yapıldı . bunu tutmak için yazdık. int olarak tuttuk.
         //public int BlogID { get; set; }
         //blog tablosundan blog isimli bir tane değer oluşturdum.
-        public Blog Blog { get; set; }
+        public int Blogid { get; set; }
+        public virtual Blog Blog { get; set; }
     }
 }
