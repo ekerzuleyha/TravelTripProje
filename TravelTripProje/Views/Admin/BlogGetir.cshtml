@@ -1,0 +1,30 @@
+﻿@model TravelTripProje.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "BlogGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Blog Güncelleme Sayfası</h2>
+<br />
+@*bu formun içinde 3 tane parametre var 1. bu begin formun içinde bulunan kodlar ne zaman çalışacak.blog güncelleme acionresultı devreye girdiği zaman çalışacak.2. blog güncelleme nerde admin controllar içinde. 3. bu log güncelleme ne zaman çalışacak sayfada bir butona tıklanıp post işlemi gerçekleştiğinde    *@
+@using (Html.BeginForm("BlogGüncelleme", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly= "readonly" })
+    <br />
+
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Tarih)
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.BlogImage)
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.Aciklama)
+    @Html.TextAreaFor(x => x.Aciklama,15,1, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Blog Güncelle</button>
+}
+

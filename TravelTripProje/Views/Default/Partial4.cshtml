@@ -6,7 +6,7 @@
         @foreach (var item in Model)
         {
         <div class="bot-img">
-            <img src="@item.BlogImage" alt="" />
+            <a href="/Blog/BlogDetay/@item.ID/"><img src="@item.BlogImage" alt="" style="width:125px; height:75px" /></a>
         </div>
         <div class="bot-desc">
             <p>@item.Aciklama.Substring(0,75) </p>

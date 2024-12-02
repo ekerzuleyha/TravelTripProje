@@ -1,0 +1,37 @@
+﻿@model List<TravelTripProje.Models.Siniflar.Blog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int sayı = 0;
+}
+<br />
+<h2>Blog Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>BAŞLIK</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        <th>DETAY</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        sayı++;
+        <tr>
+            <td>@sayı</td>
+            <td>@item.Baslik</td>
+            <td><a href="/Admin/BlogSil/@item.ID/" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Admin/BlogGetir/@item.ID/" class="btn btn-warning">Güncelle</a></td>
+            @*<td><a href="/Admin/BlogGüncelle/@item.ID/" class="btn btn-warning">Güncelle</a=""></td>*@
+            <td><a href="" class="btn btn-success">Detaya Git</a></td>
+        </tr>
+
+    }
+
+</table>
+<br />
+
+<a href="/Admin/YeniBlog/" class="btn btn-primary">YENİ BLOG</a>
+

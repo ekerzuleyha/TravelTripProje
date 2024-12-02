@@ -37,5 +37,20 @@ namespace TravelTripProje.Controllers
 
 
         }
+
+        [HttpGet]
+        public PartialViewResult YorumYap(int id)
+        {
+            ViewBag.ıd = id;
+            return PartialView();
+        }
+
+        [HttpPost]
+        public PartialViewResult YorumYap(Yorumlar yorum)
+        {
+            c.Yorumlars.Add(yorum);
+            c.SaveChanges();
+            return PartialView();
+        }
     }
 }
