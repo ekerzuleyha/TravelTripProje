@@ -56,6 +56,12 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult DetayGetir(int id)
+        {
+            var deger = c.Blogs.Find(id);
+            return View(deger);
+        }
         //[HttpGet]
         //public ActionResult BlogGüncelle(int id)
         //{
@@ -74,5 +80,36 @@ namespace TravelTripProje.Controllers
         //    c.SaveChanges();
         //    return RedirectToAction("Index");
         //}
+
+        public ActionResult YorumListesi()
+        {
+            var yorumlar = c.Yorumlars.ToList();
+            return View(yorumlar);
+        }
+
+        public ActionResult YorumSil(int id)
+        {
+            var deger = c.Yorumlars.Find(id);
+            c.Yorumlars.Remove(deger);
+            c.SaveChanges();
+            return RedirectToAction("YorumListesi");
+        }
+
+
+        public ActionResult YorumGetir(int id)
+        {
+            var deger = c.Yorumlars.Find(id);
+            return View("YorumGetir", deger);
+        }
+
+        public ActionResult YorumGüncelle(Yorumlar yorum)
+        {
+            var deger = c.Yorumlars.Find(yorum.ID);
+            deger.KullaniciAdi = yorum.KullaniciAdi;
+            deger.Mail = yorum.Mail;
+            deger.Yorumm = yorum.Yorumm;
+            c.SaveChanges();
+            return RedirectToAction("YorumListesi");
+        }
     }
 }

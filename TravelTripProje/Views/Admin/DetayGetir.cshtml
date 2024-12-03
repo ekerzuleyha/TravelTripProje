@@ -1,0 +1,22 @@
+﻿@model TravelTripProje.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "DetayGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Blog Detay Sayfası</h2>
+<br />
+<label>Başlık</label>
+<input type="text" class="form-control" name="Baslik" value="@Model.Baslik" />
+<br />
+<label>Açıklama</label>
+@Html.TextAreaFor(x=>x.Aciklama,10,1 , new { @class = "form-control" })
+<br />
+<label>Tarih</label>
+<input type="text" class="form-control" name="Tarih" value="@Model.Tarih.ToString("dd.MM.yyyy")" />
+<br />
+<label>Resim</label>
+<br />
+<img src="@Model.BlogImage" width="500px" height="400px" />
+@*@Html.TextBoxFor(x=>x.BlogImage, new { @class = "form-control" })*@
+<br />
