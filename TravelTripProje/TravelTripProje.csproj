@@ -129,8 +129,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BizeUlasınController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\GirisYapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -139,10 +141,15 @@
     <Compile Include="Migrations\202409131700455_mig1.designer.cs">
       <DependentUpon>202409131700455_mig1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412082148561_mig2.cs" />
+    <Compile Include="Migrations\202412082148561_mig2.designer.cs">
+      <DependentUpon>202412082148561_mig2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\AdresBlog.cs" />
     <Compile Include="Models\Siniflar\AnaSayfa.cs" />
+    <Compile Include="Models\Siniflar\BizeUlasın.cs" />
     <Compile Include="Models\Siniflar\Blog.cs" />
     <Compile Include="Models\Siniflar\BlogYorum.cs" />
     <Compile Include="Models\Siniflar\Context.cs" />
@@ -182,6 +189,10 @@
     <Content Include="web2\js\move-top.js" />
     <Content Include="web2\single.html" />
     <Content Include="web2\w3layouts-License.txt" />
+    <Content Include="weblogin\css\style.css" />
+    <Content Include="weblogin\images\b4.jpg" />
+    <Content Include="weblogin\index.html" />
+    <Content Include="weblogin\w3layouts-License.txt" />
     <Content Include="web\about.html" />
     <Content Include="web\contact.html" />
     <Content Include="web\css\slider.css" />
@@ -264,6 +275,10 @@
     <Content Include="Views\Admin\DetayGetir.cshtml" />
     <Content Include="Views\Admin\YorumListesi.cshtml" />
     <Content Include="Views\Admin\YorumGetir.cshtml" />
+    <Content Include="weblogin\fonts\Asap-Regular.ttf" />
+    <Content Include="weblogin\fonts\Audiowide-Regular.ttf" />
+    <Content Include="Views\GirisYap\Login.cshtml" />
+    <Content Include="Views\BizeUlasın\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,6 +299,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202409131700455_mig1.resx">
       <DependentUpon>202409131700455_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412082148561_mig2.resx">
+      <DependentUpon>202412082148561_mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

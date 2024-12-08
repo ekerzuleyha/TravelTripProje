@@ -10,7 +10,7 @@ namespace TravelTripProje.Controllers
     public class AdminController : Controller
     {
         Context c = new Context();
-
+        
         public ActionResult Index()
         {
             var values = c.Blogs.ToList();
