@@ -129,7 +129,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\BizeUlasınController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GirisYapController.cs" />
@@ -278,10 +277,10 @@
     <Content Include="weblogin\fonts\Asap-Regular.ttf" />
     <Content Include="weblogin\fonts\Audiowide-Regular.ttf" />
     <Content Include="Views\GirisYap\Login.cshtml" />
-    <Content Include="Views\BizeUlasın\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="EkranGoruntuleri\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
