@@ -163,16 +163,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2854%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2855%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2856%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2857%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2858%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2859%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2860%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2861%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2862%29.png" />
-    <Content Include="EkranGoruntuleri\Ekran Görüntüsü %2863%29.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
