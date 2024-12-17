@@ -111,5 +111,7 @@ namespace TravelTripProje.Controllers
             c.SaveChanges();
             return RedirectToAction("YorumListesi");
         }
+
+       
     }
 }

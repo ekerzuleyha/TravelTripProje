@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<link href="~/web2/css/bootstrap.css" rel="stylesheet" />
+<link href="~/web2/css/style.css" rel="stylesheet" />
+<div class="contact-content">
+    <div class="container">
+        <div class="contact-info">
+            <h3>Benimle İletişime Geçin</h3><br />
+            <p> Aklınıza takılanları sorabilirsiniz. Tecrübelerimi paylaşmaktan mutluluk duyarım.</p>
+
+        </div>
+        <div class="contact-details">
+            <form method="post" action="/Iletisim/MesajAl/">
+                <input type="text" placeholder="İsim Soyisim" name="AdSoyad" required />
+                <input type="text" placeholder="Email" name="Mail" required />
+                <input type="text" placeholder="Konu"name="Konu" required />                
+                <textarea placeholder="Mesaj" name="Mesaj" ></textarea>
+                <input type="submit" value="GÖNDER" />
+            </form>
+        </div>
+        <div class="contact-details">
+
+            <div class="col-md-6 company_address">
+                <p> <b>Adres :</b>  GÜZEL MAHALLE TEMİZ SOKAK NO:6 </p>   <br />
+                <p><b>Telefon : </b>0 222 333 33 33</p>   <br />
+                <p><b>Email : </b><a href="mailto:zuleyhaeker.16@gmail.com">zuleyhaeker.16@gmail.com</a></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+    </div>
+</div>
+
+
